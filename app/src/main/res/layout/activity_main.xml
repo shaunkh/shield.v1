@@ -1,0 +1,189 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_boder"
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="@color/primary" />
+    <!-- Header Here -->
+
+
+    <!-- Content CCCCCCCCCCCCCCCCCCCCCCCCC -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight=".1"
+        android:background="#ffffff"
+        android:orientation="vertical"
+   >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:orientation="vertical" >
+
+            <ScrollView
+                android:id="@+id/scrollView1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#FFFFFF" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="58dp"
+                        android:orientation="horizontal"
+                        android:background="@color/primary"
+                        android:weightSum="1">
+
+
+                        <ImageButton
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_action_name2"
+                            android:layout_gravity="right"
+                            android:background="@color/primary"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="0.15"
+                            android:id="@+id/btn_location" />
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edittest"
+                            android:layout_gravity="center"
+                            android:backgroundTint="@color/white"
+                            android:layout_weight="0.7"
+                            android:id="@+id/txtSearch"
+                            android:hint="Enter road or area"
+                            android:textColor="@color/black"
+                            />
+
+                        <ImageButton
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="0.15"
+                            android:src="@android:drawable/ic_menu_search"
+                            android:layout_gravity="right"
+                            android:background="@color/primary"
+                            android:layout_marginRight="5dp"
+                            android:id="@+id/btn_search" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="415dp"
+                      >
+
+                        <ListView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/searchlv" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Header Here -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:weightSum="1"
+            android:background="@color/primary">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/securitylvl"
+                android:layout_weight="0.13"
+                android:textColor="@color/white"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="Security Threat Level"
+                android:fontFamily=""/>
+
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:id="@+id/hsv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:fillViewport="true"
+            android:measureAllChildren="false"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.77"
+                android:background="@color/white"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btnFeed"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:text="Feed"
+                    android:drawableTop="@drawable/ic_newsfeed"
+                    android:background="@drawable/buttonshape1"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/btnPost"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:background="@drawable/buttonshape1"
+                    android:drawableTop="@drawable/ic_posticon"
+                    android:text="Post"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/btnMore"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:text="More"
+                    android:drawableTop="@drawable/ic_more"
+                    android:background="@drawable/buttonshape1"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+
+
+
+</LinearLayout>

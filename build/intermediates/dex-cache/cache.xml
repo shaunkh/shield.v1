@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/shaunkh/Google Drive/HL Computer Science/IA/CompSci IA/Shield Security/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/jars/classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="73753982da6bde518f3a4c6b372749981d14d1a0">
+        <dex dex="/Users/shaunkh/Google Drive/HL Computer Science/IA/CompSci IA/Shield Security/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-22.2.0_7bf110dcca91e47c60b065b015538df50ff7e2b0/classes.dex" />
+    </item>
+    <item
+        jar="/Users/shaunkh/Google Drive/HL Computer Science/IA/CompSci IA/Shield Security/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="b4cc40fa8085cfa24800f2458ac55d00181f2a56">
+        <dex dex="/Users/shaunkh/Google Drive/HL Computer Science/IA/CompSci IA/Shield Security/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_877953f7bdbbad98ea974ab6d4ba1b6a7a85ee20/classes.dex" />
+    </item>
+    <item
+        jar="/Users/shaunkh/Google Drive/HL Computer Science/IA/CompSci IA/Shield Security/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="f524fc3b085119e46e4d5f869f612e3d678d5009">
+        <dex dex="/Users/shaunkh/Google Drive/HL Computer Science/IA/CompSci IA/Shield Security/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_b48064851c0d63f0cd10edb4c4a82c0394537060/classes.dex" />
+    </item>
+    <item
+        jar="/Users/shaunkh/Google Drive/HL Computer Science/IA/CompSci IA/Shield Security/app/build/intermediates/exploded-aar/com.android.support/design/22.2.0/jars/classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="fc63b820d54c8a27a3a614bdd93920e0076581c2">
+        <dex dex="/Users/shaunkh/Google Drive/HL Computer Science/IA/CompSci IA/Shield Security/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-22.2.0_1c51a8d4119e33b25db6e2270563ebc4230fd16d/classes.dex" />
+    </item>
+    <item
+        jar="/Users/shaunkh/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/22.2.0/support-annotations-22.2.0.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="66b42a1f3eb7676070b7ef7f14b603483aecbee1">
+        <dex dex="/Users/shaunkh/Google Drive/HL Computer Science/IA/CompSci IA/Shield Security/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-22.2.0_226bbc8b7c219fdca125be74dc78a02bf06b085f/classes.dex" />
+    </item>
+    <item
+        jar="/Users/shaunkh/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife/7.0.1/d5d13ea991eab0252e3710e5df3d6a9d4b21d461/butterknife-7.0.1.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="d5d13ea991eab0252e3710e5df3d6a9d4b21d461">
+        <dex dex="/Users/shaunkh/Google Drive/HL Computer Science/IA/CompSci IA/Shield Security/app/build/intermediates/transforms/dex/debug/folders/1000/10/butterknife-7.0.1_b812af0b171c552e9c09b6231c0c8ef74954bd9e/classes.dex" />
+    </item>
+    <item
+        jar="/Users/shaunkh/Google Drive/HL Computer Science/IA/CompSci IA/Shield Security/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/jars/libs/internal_impl-22.2.0.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="57f2ab85c164ff1676ec64dee787981c046fab79">
+        <dex dex="/Users/shaunkh/Google Drive/HL Computer Science/IA/CompSci IA/Shield Security/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-22.2.0_faf66f42e33a8569d06a8af57edb34d0f32e308b/classes.dex" />
+    </item>
+    <item
+        jar="/Users/shaunkh/Google Drive/HL Computer Science/IA/CompSci IA/Shield Security/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/jars/classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
+        <dex dex="/Users/shaunkh/Google Drive/HL Computer Science/IA/CompSci IA/Shield Security/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-22.2.0_56c865b82a4e30c9e0c3b6011ea6805939bc4ef3/classes.dex" />
+    </item>
+
+</items>

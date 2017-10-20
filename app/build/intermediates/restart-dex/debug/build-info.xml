@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="x86"
+    api-level="22"
+    density="xxhdpi"
+    format="7"
+    timestamp="172623753411779"
+    token="3860592703809438811" >
+
+    <task
+        name="javac"
+        duration="3362" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="906" />
+    <task
+        name="verifier"
+        duration="173" />
+
+    <artifact
+        location="/Users/shaunkh/Google Drive/HL Computer Science/IA/CompSci IA/Shield Security/app/build/outputs/apk/app-debug.apk"
+        type="MAIN" />
+
+    <build timestamp="172623753411779" >
+        <artifact
+            location="/Users/shaunkh/Google Drive/HL Computer Science/IA/CompSci IA/Shield Security/app/build/outputs/apk/app-debug.apk"
+            type="MAIN" />
+    </build>
+
+</instant-run>

@@ -1,0 +1,408 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tv_boder"
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="@color/primary" />
+    <!-- Header Here -->
+
+
+    <!-- Content CCCCCCCCCCCCCCCCCCCCCCCCC -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight=".1"
+
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text=""
+            android:id="@+id/txtheader"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/primary"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical" >
+
+            <ScrollView
+                android:id="@+id/scrollView1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="5dp"
+
+                        android:layout_marginTop="10dp">
+
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.3"
+                            android:text="Post Type"
+                            android:id="@+id/postType"
+                            android:textSize="15sp"
+                            android:textColor="@color/primary"/>
+
+
+
+
+                                <RadioGroup
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.7"
+                                    android:orientation="horizontal"
+                                    android:id="@+id/radioGroup">
+                                <RadioButton
+                                    android:layout_width="133dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="Manual"
+                                    android:id="@+id/manualrb"
+                                    android:textColor="@color/primary"
+                                    android:buttonTint="@color/primary"
+                                    android:checked="false" />
+                                    <RadioButton
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Geolocation"
+                                        android:id="@+id/autorb"
+                                        android:textColor="@color/primary"
+                                        android:buttonTint="@color/primary"
+                                        android:checked="false" />
+                                </RadioGroup>
+
+
+
+
+                    </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/countrylayout">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:text="Country"
+                        android:id="@+id/textView3"
+                        android:textColor="@color/primary"
+                        android:textSize="15sp"/>
+
+                    <Spinner
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_weight="0.7"
+                        android:id="@+id/sp_country"
+                        android:background="@color/primary"
+                        android:entries="@array/countries"
+                        android:prompt="@string/country_prompt"/>
+
+                </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/layout_postalCode" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.3"
+                            android:text="Postal Code"
+                            android:id="@+id/postcode"
+                            android:textColor="@color/primary"
+                            android:textSize="15sp" />
+
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.7"
+                            android:id="@+id/et_postalCode"
+                            android:background="@drawable/edittest"
+                            android:textColor="@android:color/black"
+                            android:inputType="number"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/citylayout">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:text="City"
+                        android:id="@+id/textView2"
+                        android:textColor="@color/primary"
+                        android:textSize="15sp"/>
+
+                    <Spinner
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_weight="0.7"
+                        android:id="@+id/sp_city"
+                        android:background="@color/primary"
+                        android:entries="@array/city"
+                        android:prompt="@string/city_prompt"/>
+                </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="15dp"
+                        android:id="@+id/addresslayout">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.3"
+                            android:text="Address"
+                            android:id="@+id/txtRoad"
+                            android:textColor="@color/primary"
+                            android:textSize="15sp"/>
+
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.7"
+                            android:id="@+id/et_rd"
+                            android:background="@drawable/edittest"
+                            android:textColor="@android:color/black"/>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="15dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.3"
+                            android:text="Type of Crime"
+                            android:id="@+id/crimeType"
+                            android:textColor="@color/primary"
+                            android:textSize="15sp"/>
+
+                        <Spinner
+                            android:layout_width="0dp"
+                            android:layout_height="45dp"
+                            android:layout_weight="0.7"
+                            android:id="@+id/sp_crimetype"
+                            android:background="@color/primary"
+                            android:entries="@array/crime_type"
+                            android:prompt="@string/crime_prompt"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="15dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.3"
+                            android:text="Description"
+                            android:id="@+id/txtdsc"
+                            android:textColor="@color/primary"
+                            android:textSize="15sp"/>
+
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.7"
+                            android:id="@+id/et_dsc"
+                            android:background="@drawable/edittest"
+                            android:textColor="@android:color/black"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.3"
+                            android:text="Date"
+                            android:id="@+id/txtDate"
+                            android:textColor="@color/primary"
+                            android:textSize="15sp" />
+
+
+
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:id="@+id/et_Date"
+                            android:background="@drawable/edittest"
+                            android:textColor="@android:color/black"
+                            android:editable="false"
+                            android:inputType="none"/>
+
+                        <ImageButton
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                            android:layout_weight="0.2"
+                        android:id="@+id/btn_date"
+                            android:src="@android:drawable/ic_menu_my_calendar"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="15dp">
+
+                    <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                    android:text="Post"
+                    android:id="@+id/btn_post"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    />
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:text="Clear"
+                        android:id="@+id/btn_clear"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="15dp"
+                        />
+
+                </LinearLayout>
+
+
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <!-- Header Here -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <HorizontalScrollView
+            android:id="@+id/hsv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:fillViewport="true"
+            android:measureAllChildren="false"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.77"
+                android:background="@color/white"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btnFeed"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:text="Feed"
+                    android:drawableTop="@drawable/ic_newsfeed"
+                    android:background="@drawable/buttonshape1"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/btnPost"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:background="@drawable/buttonshape1"
+                    android:drawableTop="@drawable/ic_posticon"
+                    android:text="Post"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/btnMore"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:text="More"
+                    android:drawableTop="@drawable/ic_more"
+                    android:background="@drawable/buttonshape1"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+
+
+</LinearLayout>
